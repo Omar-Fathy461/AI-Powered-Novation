@@ -1,0 +1,139 @@
+@import '../../assets/sass/utils.scss';
+
+.about-section {
+    background-color: #121215;
+    background-image: url(../../assets/images/bg-fixed4.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding-block: 100px;
+
+    .about-title {
+        font-size: $mainFontTitle;
+        font-weight: $mainFontWeight;
+        color: white;
+    }
+
+    .about-expl {
+        color: #838386;
+        font-size: 19px;
+        font-weight: 600;
+    }
+
+    .about-title,
+    .about-expl {
+        padding-block: 10px;
+        text-align: center
+    }
+
+    .content {
+        @extend %center_flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 1.5rem;
+        padding-top: 20px;
+
+        .about-img {
+
+            img {
+                width: 100%;
+                border-radius: 20px;
+            }
+        }
+
+        .about-text {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: end;
+
+            div {
+                text-align: center;
+
+                h2 {
+                    font-size: $mainFontTitle;
+                    font-weight: $mainFontWeight;
+                    color: white;
+
+                    span {
+                        color: $mainColor;
+                    }
+                }
+
+                p {
+                    color: #838386;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .about-title {
+        font-size: 30px !important;
+    }
+
+    .about-expl {
+        font-size: 15px !important;
+    }
+
+    .content {
+        .about-text {
+            div {
+                margin-top: 40px;
+
+                h2 {
+                    font-size: 30px !important;
+                }
+            }
+        }
+    }
+}
+
+/* Extra small devices */
+@media (min-width: 481px) and (max-width: 767px) {
+    .about-title {
+        font-size: 50px !important;
+    }
+
+    .about-expl {
+        font-size: 20px !important;
+    }
+
+    .content {
+        .about-text {
+            div {
+                margin-top: 40px;
+
+                h2 {
+                    font-size: 40px !important;
+                }
+            }
+        }
+    }
+}
+
+/* Small Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .about-title {
+        font-size: 50px !important;
+    }
+
+    .about-expl {
+        font-size: 20px !important;
+    }
+
+    .content {
+        .about-text {
+            div {
+                margin-top: 35px;
+
+                h2 {
+                    font-size: 45px !important;
+                }
+            }
+        }
+    }
+}

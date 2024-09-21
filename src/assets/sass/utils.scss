@@ -1,0 +1,16 @@
+$mainColor: #7d3cf3;
+$mainFontTitle: 50px;
+$mainFontWeight: 600;
+
+%center_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%center_position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

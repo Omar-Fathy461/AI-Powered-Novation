@@ -1,0 +1,217 @@
+@import '../../assets/sass/utils.scss';
+
+.aiSolutions {
+    background-color: rgb(20, 20, 21);
+    padding-block: 50px;
+
+    .content {
+        h2 {
+            font-size: $mainFontTitle;
+            font-weight: $mainFontWeight;
+            color: white;
+            text-align: center;
+            padding-block: 15px
+        }
+
+        P {
+            color: #C1C1C1;
+            font-size: 15px;
+            text-align: center;
+            padding-block: 15px
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+            padding-block: 50px;
+
+            div {
+                grid-column: span 3;
+                padding: 20px;
+                border-radius: 20px;
+                transition: all .4s ease;
+                cursor: pointer;
+
+                svg,
+                h5,
+                p {
+                    margin-block: 10px;
+                }
+
+                svg {
+                    font-size: 50px;
+                    color: rgb(215, 213, 213);
+                }
+
+                h5 {
+                    color: white;
+                    font-weight: $mainFontWeight;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        bottom: -25%;
+                        left: 0;
+                        width: 0;
+                        height: 2px;
+                        background-color: white;
+                        transition: width .5s ease;
+                    }
+
+                    &:hover::before {
+                        width: 100%;
+                    }
+                }
+
+                p {
+                    text-align: start;
+                    font-weight: $mainFontWeight;
+                }
+
+                &:hover {
+                    background-color: $mainColor;
+                    transform: translateY(-10px);
+
+                    svg,
+                    p,
+                    h5 {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 480px) {
+    .aiSolutions {
+        .content {
+            h2 {
+                font-size: 25px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            .cards {
+                div {
+                    grid-column: span 12;
+
+                    svg,
+                    h5,
+                    p {
+                        margin-block: 5px;
+                    }
+
+                    svg {
+                        font-size: 33px;
+                    }
+
+                    h5 {
+                        font-size: 18px;
+                    }
+
+                    p {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Extra small devices */
+@media (min-width: 481px) and (max-width: 767px) {
+    .aiSolutions {
+        .content {
+            h2 {
+                font-size: 35px;
+            }
+
+            p {
+                font-size: 17px;
+            }
+
+            .cards {
+                div {
+                    grid-column: span 12;
+
+                    svg,
+                    h5,
+                    p {
+                        margin-block: 6px;
+                    }
+
+                    svg {
+                        font-size: 35px;
+                    }
+
+                    h5 {
+                        font-size: 20px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Small Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .aiSolutions {
+        .content {
+            h2 {
+                font-size: 35px;
+            }
+
+            p {
+                font-size: 17px;
+            }
+
+            .cards {
+                div {
+                    grid-column: span 6;
+
+                    svg,
+                    h5,
+                    p {
+                        margin-block: 6px;
+                    }
+
+                    svg {
+                        font-size: 35px;
+                    }
+
+                    h5 {
+                        font-size: 20px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Large Tablets/Laptops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .aiSolutions {
+        .content {
+            .cards {
+                div {
+                    grid-column: span 6;
+                }
+            }
+        }
+    }
+}

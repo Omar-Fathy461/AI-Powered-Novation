@@ -1,0 +1,192 @@
+@import '../../assets/sass/utils.scss';
+
+.features-section {
+    background-color: black;
+    padding-block: 100px;
+
+    .features-title {
+        font-size: $mainFontTitle;
+        font-weight: $mainFontWeight;
+        color: white;
+    }
+
+    .features-info {
+        color: #838386;
+        font-size: 19px;
+        font-weight: 600;
+    }
+
+    .features-title,
+    .features-info {
+        padding-block: 10px;
+        text-align: center
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1.5rem;
+        padding-block: 50px;
+
+        div {
+            grid-column: span 3;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all .4s ease;
+            cursor: pointer;
+
+            svg {
+                color: $mainColor;
+                font-size: 50px;
+                margin-block: 20px;
+            }
+
+            h5 {
+                color: white;
+                font-weight: 800;
+                margin-block: 10px 20px;
+            }
+
+            p {
+                color: #a9a9ad;
+                font-size: 17px;
+                width: fit-content;
+                margin-top: 10px;
+            }
+
+            &:hover {
+                background-color: $mainColor;
+
+                p {
+                    color: white;
+                }
+
+                svg {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .features-section {
+
+        .features-title {
+            font-size: 25px;
+        }
+
+        .features-info {
+            font-size: 15px;
+        }
+
+        .content {
+            div {
+                grid-column: span 12;
+
+                svg {
+                    font-size: 35px;
+                }
+
+                h5 {
+                    font-weight: 600;
+                    font-size: 15px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+
+                svg,
+                h5,
+                p {
+                    margin-block: 10px !important;
+                }
+            }
+        }
+
+    }
+}
+
+/* Extra small devices */
+@media (min-width: 481px) and (max-width: 767px) {
+    .features-section {
+
+        .features-title {
+            font-size: 28px;
+        }
+
+        .features-info {
+            font-size: 17px;
+        }
+
+        .content {
+            div {
+                grid-column: span 12;
+
+                svg {
+                    font-size: 37px;
+                }
+
+                h5 {
+                    font-weight: 600;
+                    font-size: 17px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+
+                svg,
+                h5,
+                p {
+                    margin-block: 10px !important;
+                }
+            }
+        }
+
+    }
+}
+
+/* Small Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .features-section {
+
+        .features-title {
+            font-size: 28px;
+        }
+
+        .features-info {
+            font-size: 17px;
+        }
+
+        .content {
+            div {
+                grid-column: span 6;
+
+                svg {
+                    font-size: 39px;
+                }
+
+                h5 {
+                    font-weight: 600;
+                    font-size: 19px;
+                }
+
+                p {
+                    font-size: 17px;
+                }
+
+                svg,
+                h5,
+                p {
+                    margin-block: 10px !important;
+                }
+            }
+        }
+
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {}

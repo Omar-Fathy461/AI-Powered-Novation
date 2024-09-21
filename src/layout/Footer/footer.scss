@@ -1,0 +1,225 @@
+@import '../../assets/sass/utils.scss';
+
+.footer {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    padding-block: 30px;
+
+    .content {
+        @extend %center_flex;
+        justify-content: space-between;
+
+        .links-nav {
+            a {
+                position: relative;
+                text-decoration: none;
+                color: white;
+                font-size: 15px;
+                margin-inline: 15px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    background-color: $mainColor;
+                    border-radius: 10px;
+                    width: 0;
+                    height: 2px;
+                    transition: width .4s ease;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+
+        .follow-media {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1.5rem;
+
+            p {
+                font-weight: 600;
+                color: white;
+                margin-block: 0;
+            }
+
+            div {
+                display: flex;
+
+                span {
+                    @extend %center_flex;
+                    background-color: #b897f690;
+                    width: 25px;
+                    height: 25px;
+                    margin-left: 5px;
+                    border-radius: 50%;
+                    transition: all .4s ease;
+                    cursor: pointer;
+
+                    svg {
+                        color: white;
+                        font-size: 13px;
+                    }
+
+                    &:hover {
+                        background-color: white;
+
+                        svg {
+                            color: $mainColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-block: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.259);
+
+        span {
+            color: #a09c9c;
+            font-weight: 700;
+            font-size: 13px;
+            margin-inline: 10px;
+        }
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        font-size: 14px;
+
+        span {
+            color: #cecbcb;
+            font-weight: 500;
+        }
+
+        .copyright_links {
+            a {
+                color: #cecbcb;
+                font-size: 14px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        .content {
+            flex-direction: column;
+
+            .logo,
+            .links-nav,
+            .follow-media {
+                margin-bottom: 13px;
+            }
+
+            .links-nav {
+                a {
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .footer-contact {
+            flex-direction: column-reverse;
+        }
+
+        .copyright {
+            flex-direction: column;
+            font-size: 12px !important;
+
+            .copyright_links {
+                a {
+                    font-size: 12px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .footer {
+        .content {
+            flex-direction: column;
+
+            .logo,
+            .links-nav,
+            .follow-media {
+                margin-bottom: 13px;
+            }
+
+            .links-nav {
+                a {
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .footer-contact {
+            flex-direction: column-reverse;
+        }
+
+        .copyright {
+            flex-direction: column;
+            font-size: 12px !important;
+
+            .copyright_links {
+                a {
+                    font-size: 12px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .footer {
+        .content {
+            flex-direction: column;
+
+            .logo,
+            .links-nav,
+            .follow-media {
+                margin-bottom: 13px;
+            }
+
+            .links-nav {
+                a {
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .footer-contact {
+            flex-direction: column-reverse;
+        }
+
+        .copyright {
+            flex-direction: column;
+            font-size: 12px !important;
+
+            .copyright_links {
+                a {
+                    font-size: 12px !important;
+                }
+            }
+        }
+    }
+}

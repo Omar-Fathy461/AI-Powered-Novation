@@ -1,0 +1,152 @@
+@import '../../assets/sass/utils.scss';
+
+.about-us {
+    background-color: black;
+    padding-block: 100px 50px;
+
+    .content {
+        @extend %center_flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+
+        .ideas-adding {
+
+            h2,
+            p {
+                margin-block: 30px;
+            }
+
+            h2 {
+                color: white;
+                font-size: $mainFontTitle;
+                font-weight: $mainFontWeight;
+            }
+
+            p {
+                color: #a9a9ad;
+                font-size: 17px;
+                width: fit-content;
+                margin-top: 10px;
+            }
+
+            .features {
+                h6 {
+                    color: white;
+                    font-weight: $mainFontWeight;
+                }
+
+                svg {
+                    color: $mainColor;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .img-ideas {
+            flex: 1;
+
+            img {
+                width: 100%;
+                border-radius: 30px;
+            }
+
+            .achievements {
+                @extend %center_flex;
+                justify-content: space-around;
+                margin-block: 20px;
+
+                div {
+                    h4 {
+                        color: $mainColor;
+                        font-size: 40px;
+                        font-weight: $mainFontWeight;
+                        text-align: center;
+                    }
+
+                    p {
+                        color: #a9a9ad;
+                        font-weight: $mainFontWeight;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .about-us {
+        .content {
+            .ideas-adding {
+                h2 {
+                    font-size: 28px;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+            }
+
+            .img-ideas {
+                .achievements {
+                    div {
+                        h4 {
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Extra small devices */
+@media (min-width: 481px) and (max-width: 767px) {
+    .about-us {
+        .content {
+            .ideas-adding {
+                h2 {
+                    font-size: 35px;
+                }
+
+                p {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+
+/* Small Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .about-us {
+        .content {
+            .ideas-adding {
+                h2 {
+                    font-size: 37px;
+                }
+
+                p {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .about-us {
+        .content {
+            .ideas-adding {
+                h2 {
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}

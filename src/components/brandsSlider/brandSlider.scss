@@ -1,0 +1,63 @@
+@import '../../assets/sass/utils.scss';
+
+.brands {
+    background-color: #4b14b1;
+    overflow: hidden;
+    padding-block: 20px;
+    white-space: nowrap;
+    position: relative;
+
+    .logos_slide {
+        display: inline-block;
+        animation: slideLogos 10s infinite linear;
+
+        img {
+            height: 50px;
+            margin-inline: 50px;
+        }
+    }
+
+    &::after,
+    &::before {
+        position: absolute;
+        top: 0;
+        width: 250px;
+        height: 100%;
+        z-index: 2;
+        content: "";
+    }
+
+    &::before {
+        background-image: linear-gradient(to left, transparent, $mainColor);
+        left: 0;
+    }
+
+    &::after {
+        background-image: linear-gradient(to right, transparent, $mainColor);
+        right: 0;
+    }
+}
+
+@keyframes slideLogos {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 480px) {
+    .brands {
+        padding-block: 5px;
+
+        .logos_slide {
+            img {
+                width: 180px;
+            }
+        }
+    }
+}

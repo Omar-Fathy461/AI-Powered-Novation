@@ -1,0 +1,112 @@
+@import '../../assets/sass/utils.scss';
+
+.video {
+    background-image: url(../../assets//images//bg-video4.png);
+    background-size: cover;
+    height: 90vh;
+    position: relative;
+
+    .content {
+        @extend %center_position;
+        text-align: center;
+
+        .btn_play {
+            @extend %center_flex;
+            background-color: $mainColor;
+            width: 80px;
+            height: 80px;
+            margin-inline: auto;
+            border-radius: 50%;
+            transition: all .4s ease;
+            cursor: pointer;
+
+            svg {
+                font-size: 30px;
+                color: white;
+            }
+
+            &:hover {
+                background-color: white;
+
+                svg {
+                    color: $mainColor;
+                }
+            }
+        }
+
+        h2 {
+            color: white;
+            font-size: 45px;
+            font-weight: 600;
+        }
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 480px) {
+    .video {
+        height: 70vh;
+        background-position: center;
+
+        .btn_play {
+            width: 70px !important;
+            height: 70px !important;
+
+            svg {
+                font-size: 25px;
+            }
+        }
+
+        h2 {
+            font-size: 25px !important;
+            width: 300px;
+        }
+    }
+}
+
+/* Extra small devices */
+@media (min-width: 481px) and (max-width: 767px) {
+    .video {
+        height: 70vh;
+        background-position: center;
+
+        .btn_play {
+            width: 70px !important;
+            height: 70px !important;
+
+            svg {
+                font-size: 25px;
+            }
+        }
+
+        h2 {
+            font-size: 25px !important;
+            width: 300px;
+        }
+    }
+}
+
+/* Small Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .video {
+        height: 70vh;
+        background-position: center;
+
+        .btn_play {
+            width: 70px !important;
+            height: 70px !important;
+
+            svg {
+                font-size: 25px;
+            }
+        }
+
+        h2 {
+            font-size: 25px !important;
+            width: 300px;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {}

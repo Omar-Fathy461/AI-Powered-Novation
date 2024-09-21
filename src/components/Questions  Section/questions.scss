@@ -1,0 +1,141 @@
+@import '../../assets/sass/utils.scss';
+
+.faqs {
+    background-color: black;
+    padding-block: 100px;
+
+    .content {
+        h2 {
+            color: white;
+            font-size: $mainFontTitle;
+            font-weight: $mainFontWeight
+        }
+
+        p {
+            color: #838386;
+            font-size: 18px;
+            font-weight: $mainFontWeight;
+        }
+
+        .accordion {
+            margin-top: 20px;
+
+            .accordion-item {
+                background-color: black;
+                border: none;
+
+                button {
+                    background-color: black;
+                    color: #c6c6c9;
+                    font-size: 20px;
+                    font-weight: 600;
+                    transition: color .4s ease;
+                    padding-left: 0 !important;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.114);
+                    box-shadow: none;
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+
+                .accordion-button:focus {
+                    box-shadow: none;
+                }
+
+                .accordion-collapse {
+                    color: #838386;
+                    font-size: 15px;
+                    font-weight: $mainFontWeight;
+
+                    .accordion-body {
+                        padding-left: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .faqs {
+        h2 {
+            font-size: 25px !important;
+        }
+
+        .w-50 {
+            width: 100% !important;
+        }
+
+        .accordion {
+            .accordion-item {
+                button {
+                    font-size: 16px !important;
+                }
+            }
+        }
+    }
+}
+
+/* Extra small devices */
+@media (min-width: 481px) and (max-width: 767px) {
+    .faqs {
+        h2 {
+            font-size: 26px !important;
+        }
+
+        .w-50 {
+            width: 100% !important;
+        }
+
+        .accordion {
+            .accordion-item {
+                button {
+                    font-size: 16px !important;
+                }
+            }
+        }
+    }
+}
+
+/* Small Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .faqs {
+        h2 {
+            font-size: 27px !important;
+        }
+
+        .w-50 {
+            width: 100% !important;
+        }
+
+        .accordion {
+            .accordion-item {
+                button {
+                    font-size: 16px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .faqs {
+        h2 {
+            font-size: 28px !important;
+        }
+
+        .w-50 {
+            width: 70% !important;
+        }
+
+        .accordion {
+            .accordion-item {
+                button {
+                    font-size: 17px !important;
+                }
+            }
+        }
+    }
+}

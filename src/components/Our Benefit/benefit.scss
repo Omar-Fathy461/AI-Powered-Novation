@@ -1,0 +1,161 @@
+@import '../../assets/sass/utils.scss';
+
+
+.our-benefit {
+    background-color: rgb(14, 14, 15);
+    padding-block: 50px;
+
+    h2 {
+        color: white;
+        font-size: $mainFontTitle ;
+        font-weight: $mainFontWeight;
+        margin-bottom: 50px;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        .benefit-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 1rem;
+
+            div {
+                margin-bottom: 50px;
+                cursor: pointer;
+
+                h5 {
+                    font-size: 25px;
+                    font-weight: $mainFontWeight;
+                    color: rgb(249, 245, 245);
+                    position: relative;
+                    transition: color .4s ease;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: -8px;
+                        left: 0;
+                        background-color: $mainColor;
+                        border-radius: 10px;
+                        width: 0;
+                        height: 1px;
+                        transition: width .4s ease;
+                    }
+
+                }
+
+
+                p {
+                    color: #a9a9ad;
+                    font-size: 15px;
+                    width: fit-content;
+                    margin-block: 0;
+                    border-top: 1px solid rgba(255, 255, 255, 0.283);
+                }
+
+                h5,
+                p {
+                    padding-block: 10px;
+                }
+            }
+
+            div:hover h5 {
+                color: $mainColor;
+            }
+
+            div:hover h5::after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 480px) {
+    .our-benefit {
+        h2 {
+            font-size: 25px !important;
+        }
+
+        .cards {
+            div {
+                h5 {
+                    font-size: 17px !important;
+                }
+
+                p {
+                    font-size: 15px !important;
+                }
+            }
+
+            .benefit-card:last-child {
+                flex: 1 !important;
+            }
+        }
+    }
+}
+
+/* Extra small devices */
+@media (min-width: 481px) and (max-width: 767px) {
+    .our-benefit {
+        h2 {
+            font-size: 30px;
+        }
+
+        .cards {
+            div {
+                h5 {
+                    font-size: 20px !important;
+                }
+
+            }
+
+            .benefit-card:last-child {
+                flex: 1;
+            }
+        }
+    }
+}
+
+/* Small Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .our-benefit {
+        h2 {
+            font-size: 40px;
+        }
+
+        .cards {
+            .benefit-card:last-child {
+                flex: 1;
+            }
+        }
+    }
+}
+
+/* Large Tablets/Laptops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .our-benefit {
+        .cards {
+            .benefit-card:last-child {
+                flex: 1;
+            }
+        }
+    }
+}
+
+/* Desktops */
+@media (min-width:1200px) and (max-width: 1919px) {
+    .our-benefit {
+        .cards {
+            .benefit-card:last-child {
+                flex: 1;
+            }
+        }
+    }
+}

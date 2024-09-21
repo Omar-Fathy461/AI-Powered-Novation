@@ -1,0 +1,158 @@
+@import '../../assets/sass/utils.scss';
+
+
+.ContactFormPage {
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+
+        .contact-bg {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .contact-form {
+            background-image: url(../../assets//images/bg-fixed4.png);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: #1d162c;
+            padding-top: 100px;
+            margin-top: 0;
+            border-radius: 0;
+
+            .container-contact {
+                width: 80%;
+                margin-inline: auto;
+
+                .form {
+                    h2 {
+                        color: white;
+                        font-size: $mainFontTitle ;
+                        font-weight: $mainFontWeight;
+                    }
+
+                    p {
+                        color: #838386;
+                        font-size: 18px;
+                        font-weight: $mainFontWeight;
+                    }
+
+                    div {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 1.5rem;
+                    }
+
+                    input {
+                        background-color: #352e41;
+                        color: white;
+                        width: 100%;
+                        height: 60px;
+                        padding: 10px;
+                        margin-block: 15px;
+                        border: none;
+                        outline: none;
+                        border-radius: 15px;
+                    }
+
+                    textarea {
+                        background-color: #352e41;
+                        color: white;
+                        width: 100%;
+                        height: 100px;
+                        padding: 10px;
+                        margin-block: 15px;
+                        border: none;
+                        outline: none;
+                        border-radius: 15px;
+                    }
+
+                    button {
+                        background-color: $mainColor;
+                        color: white;
+                        width: 150px;
+                        height: 50px;
+                        border: none;
+                        border-radius: 25px;
+                        transition: background-color .4s ease;
+
+                        &:hover {
+                            background-color: #4b14b1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 480px) {
+    .ContactFormPage {
+        .contact-form {
+            .container-contact {
+                .form {
+                    h2 {
+                        font-size: 25px !important;
+                    }
+
+                    div {
+                        gap: .2rem !important;
+
+                        input {
+                            width: 100% !important;
+                        }
+                    }
+
+                    input {
+                        margin-block: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Extra small devices */
+@media (min-width: 481px) and (max-width: 767px) {
+    .ContactFormPage {
+        .contact-form {
+            .container-contact {
+                .form {
+                    h2 {
+                        font-size: 35px !important;
+                    }
+
+                    div {
+                        gap: .2rem !important;
+
+                        input {
+                            width: 100% !important;
+                        }
+                    }
+
+                    input {
+                        margin-block: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 480px) {}
+
+/* Extra small devices */
+@media (min-width: 481px) and (max-width: 767px) {}
+
+/* Small Tablets */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/* Large Tablets/Laptops */
+@media (min-width: 992px) and (max-width: 1199px) {}

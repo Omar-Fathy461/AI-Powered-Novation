@@ -1,0 +1,211 @@
+@import '../../assets/sass/utils.scss';
+
+.our-leader {
+    background-color: rgb(14, 14, 15);
+    padding-block: 25px;
+
+    .content {
+        h2 {
+            color: white;
+            font-size: $mainFontTitle;
+            font-weight: $mainFontWeight;
+        }
+
+        p {
+            color: #a9a9ad;
+            font-size: 17px;
+            width: fit-content;
+            margin-bottom: 40px;
+        }
+
+        h2,
+        p {
+            padding-block: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+            padding-bottom: 20px;
+            cursor: pointer;
+
+            div {
+                grid-column: span 3;
+                overflow: hidden;
+
+                .img-card {
+                    display: inline-block;
+                    overflow: hidden;
+
+                    img {
+                        transition: transform .4s ease-in-out;
+                    }
+                }
+
+                &:hover img {
+                    transform: scale(1.2);
+                }
+
+                h5 {
+                    color: white;
+                    font-weight: $mainFontWeight
+                }
+
+                h5,
+                p {
+                    margin-block: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 480px) {
+    .our-leader {
+        .content {
+            h2 {
+                font-size: 25px;
+                padding-block: 5px;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: 15px;
+                margin-block: 0;
+            }
+
+            .cards {
+                margin-top: 50px;
+
+                div {
+                    grid-column: span 12;
+                    text-align: center;
+
+                    p {
+                        margin-block: 10px;
+                        text-align: center;
+                        display: block;
+                        width: 100%;
+                        padding-block: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Extra small devices */
+@media (min-width: 481px) and (max-width: 767px) {
+    .our-leader {
+        .content {
+            h2 {
+                font-size: 35px;
+                padding-block: 5px;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: 16px;
+                margin-block: 0;
+            }
+
+            .cards {
+                margin-top: 50px;
+
+                div {
+                    grid-column: span 6;
+                    text-align: center;
+
+                    p {
+                        margin-block: 10px;
+                        text-align: center;
+                        display: block;
+                        width: 100%;
+                        padding-block: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Small Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .our-leader {
+        .content {
+            h2 {
+                font-size: 40px;
+                padding-block: 5px;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: 17px;
+                margin-block: 0;
+            }
+
+            .cards {
+                margin-top: 50px;
+
+                div {
+                    grid-column: span 6;
+                    text-align: center;
+
+                    p {
+                        margin-block: 10px;
+                        text-align: center;
+                        display: block;
+                        width: 100%;
+                        padding-block: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Large Tablets/Laptops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .our-leader {
+        .content {
+
+            p {
+                font-size: 18px;
+                margin-block: 0;
+            }
+
+            .cards {
+                margin-top: 50px;
+
+                div {
+                    grid-column: span 4;
+                    text-align: center;
+
+                    p {
+                        margin-block: 10px;
+                        text-align: center;
+                        display: block;
+                        width: 100%;
+                        padding-block: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 480px) {}
+
+/* Extra small devices */
+@media (min-width: 481px) and (max-width: 767px) {}
+
+/* Small Tablets */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/* Large Tablets/Laptops */
+@media (min-width: 992px) and (max-width: 1199px) {}

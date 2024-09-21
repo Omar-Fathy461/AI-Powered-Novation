@@ -1,0 +1,192 @@
+@import '../../assets/sass/utils.scss';
+
+.contact-section {
+    .contact_img {
+        background-image: url(../../assets/images/bg-contact4.png);
+        background-size: cover;
+        background-position: center;
+        height: 830px;
+        position: relative;
+
+        .content {
+            background-color: $mainColor;
+            position: absolute;
+            bottom: 0;
+
+            h2 {
+                color: white;
+                font-size: 50px;
+                font-weight: $mainFontWeight;
+                text-align: center;
+                padding: 10px;
+            }
+        }
+    }
+
+    .contact_form {
+        background-image: url(../../assets//images/bg-fixed4.png);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-color: #1d162c;
+        padding-block: 100px;
+
+        .container-contact {
+            width: 80%;
+            margin-inline: auto;
+
+            .content {
+                h2 {
+                    color: white;
+                    font-size: $mainFontTitle ;
+                    font-weight: $mainFontWeight;
+                }
+
+                p {
+                    color: #838386;
+                    font-size: 18px;
+                    font-weight: $mainFontWeight;
+                }
+
+                input {
+                    background-color: #352e41;
+                    color: white;
+                    width: 100%;
+                    height: 60px;
+                    padding: 10px;
+                    margin-block: 15px;
+                    border: none;
+                    outline: none;
+                    border-radius: 15px;
+                }
+
+                textarea {
+                    background-color: #352e41;
+                    color: white;
+                    width: 100%;
+                    height: 100px;
+                    padding: 10px;
+                    margin-block: 15px;
+                    border: none;
+                    outline: none;
+                    border-radius: 15px;
+                }
+
+                button {
+                    background-color: $mainColor;
+                    color: white;
+                    width: 150px;
+                    height: 50px;
+                    border: none;
+                    border-radius: 25px;
+                    transition: background-color .4s ease;
+
+                    &:hover {
+                        background-color: #4b14b1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .contact-section {
+        .contact_img {
+            width: 100% !important;
+
+            .content {
+                padding-block: 10px;
+
+                h2 {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .contact_form {
+            .content {
+                h2 {
+                    font-size: 27px !important;
+
+                    p {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Extra small devices */
+@media (min-width: 481px) and (max-width: 767px) {
+    .contact-section {
+        .contact_img {
+            width: 100% !important;
+
+            .content {
+                padding-block: 10px;
+
+                h2 {
+                    font-size: 28px;
+                }
+            }
+        }
+
+        .contact_form {
+            .content {
+                h2 {
+                    font-size: 27px !important;
+
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Small Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .contact-section {
+        .contact_img {
+            width: 100% !important;
+
+            .content {
+                padding-block: 10px;
+
+                h2 {
+                    font-size: 35px;
+                }
+            }
+        }
+
+        .contact_form {
+            .content {
+                h2 {
+                    font-size: 27px !important;
+
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .contact-section {
+        .contact_img {
+            .content {
+                padding-block: 10px;
+
+                h2 {
+                    font-size: 37px;
+                }
+            }
+        }
+    }
+}
