@@ -1,5 +1,5 @@
 //components
-import HeroSection from '../../components/heroSection/heroSection'
+import HeroSection from '../../components/hero section/HeroSection'
 import BrandSlider from '../../components/brandsSlider/BrandSlider'
 import About from '../../components/aboutSection/About'
 import AiFeatures from '../../components/aiFeatures/AiFeatures'
