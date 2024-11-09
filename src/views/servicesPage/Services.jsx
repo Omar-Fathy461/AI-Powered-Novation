@@ -4,11 +4,13 @@ import AISolutions from '../../components/AI solutions/AISolutions'
 import BrandSlider from '../../components/brandsSlider/BrandSlider'
 import Reviews from '../../components/Reviews Community/Reviews'
 import ContactFormPage from '../../components/Contact Form Page/ContactFormPage'
+import AiChat from '../../components/AI-Chat/AiChat'
 
 const Services = () => {
     return (
         <div>
             <Heading page='Services' heading='' text='' />
+            <AiChat />
             <AISolutions />
             <BrandSlider />
             <Reviews />

@@ -40,10 +40,10 @@ const Header = () => {
                         <div className="logo"><img src={logo} alt="" /></div>
                         <div className="links-nav">
                             <NavLink to="/">Home</NavLink>
-                            <NavLink to="/about">About Us</NavLink>
-                            <NavLink to="/blog">Blog</NavLink>
-                            <NavLink to='/contact'>Contact</NavLink>
                             <NavLink to="/services">Services</NavLink>
+                            <NavLink to="/blog">Blog</NavLink>
+                            <NavLink to="/about">About Us</NavLink>
+                            <NavLink to='/contact'>Contact</NavLink>
                         </div>
                         <div className="call">
                             <FontAwesomeIcon icon={faMagnifyingGlass} />
