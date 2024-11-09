@@ -1,7 +1,7 @@
-import team1 from '../../assets/images/team1.png'
-import team2 from '../../assets/images/team2.png'
-import team3 from '../../assets/images/team3.png'
-import team4 from '../../assets/images/team4.png'
+import team1 from '../../assets/images/1.png'
+import team2 from '../../assets/images/12.png'
+import team3 from '../../assets/images/9.png'
+import team4 from '../../assets/images/5.png'
 
 //style
 import './ourLeader.scss'
@@ -16,14 +16,14 @@ const OurLeader = () => {
                     <div className="cards">
                         <div>
                             <span className="img-card">
-                                <img src={team1} alt="" />
+                                <img src={team2} alt="" />
                             </span>
                             <h5>Maverick Nguyen</h5>
                             <p>Graphic Designer</p>
                         </div>
                         <div>
                             <span className="img-card">
-                                <img src={team2} alt="" />
+                                <img src={team4} alt="" />
                             </span>
                             <h5>Georgina Smith</h5>
                             <p>CEO - Marketting</p>

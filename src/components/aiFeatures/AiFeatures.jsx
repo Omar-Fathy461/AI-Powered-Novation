@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBolt, faBoxesStacked, faBox, faHandshake } from '@fortawesome/free-solid-svg-icons'
+import TextSlider from '../textSlider/TextSlider'
 
 //style
 import './features.scss'
@@ -32,6 +33,7 @@ const AiFeatures = () => {
                     </div>
                 </div>
             </div>
+            <TextSlider />
         </div>
     )
 }

@@ -8,6 +8,10 @@ import Reviews from '../../components/Reviews Community/Reviews'
 import IntelligentSolutions from '../../components/Intelligent Solutions/IntelligentSolutions'
 import Questions from '../../components/Questions  Section/Questions'
 import FormSendMessage from '../../components/Get In Touch/FormSendMessage'
+import Gallery from '../../components/Gallery/Gallery'
+import FindPlan from '../../components/plans/FindPlan'
+import TextSlider from '../../components/textSlider/TextSlider'
+import BlogSlider from '../../components/Slider/BlogSlider'
 
 
 //style
@@ -23,7 +27,10 @@ const Home = () => {
             <AIVideo />
             <Reviews />
             <IntelligentSolutions />
+            <Gallery />
+            <FindPlan />
             <Questions />
+            <BlogSlider />
             <FormSendMessage />
         </div>
     )

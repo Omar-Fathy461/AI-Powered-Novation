@@ -1,4 +1,4 @@
-import aboutImg from '../../assets/images/bg-how-it-work.png'
+import aboutImg from '../../assets/images/item12.png'
 //style
 import './about.scss'
 

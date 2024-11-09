@@ -2,13 +2,14 @@
 
 .faqs {
     background-color: black;
-    padding-block: 100px;
+    padding-block: 50px 0;
 
     .content {
+
         h2 {
             color: white;
             font-size: $mainFontTitle;
-            font-weight: $mainFontWeight
+            font-weight: $mainFontWeight;
         }
 
         p {
@@ -18,7 +19,7 @@
         }
 
         .accordion {
-            margin-top: 20px;
+            margin-top: 40px;
 
             .accordion-item {
                 background-color: black;

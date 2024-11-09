@@ -7,9 +7,13 @@ import Contact from "./views/contact/Contact"
 import Blog from "./views/blog/Blog"
 import Services from "./views/servicesPage/Services"
 import AboutUs from "./views/About/AboutUs"
+import BlogDetail from "./views/blog/BlogDetail"
+import Login from "./views/Login/Login"
+import Signup from "./components/signUp/Signup"
 
 //style
 import './assets/sass/app.scss'
+import 'animate.css';
 
 function App() {
   const router = createBrowserRouter([{
@@ -25,8 +29,12 @@ function App() {
         element: <Contact />
       },
       {
-        path: "/blog",
+        path: "/blogs",
         element: <Blog />
+      },
+      {
+        path: "/blogs/:id",
+        element: <BlogDetail />
       },
       {
         path: "/about",
@@ -35,7 +43,15 @@ function App() {
       {
         path: "/services",
         element: <Services />
-      }
+      },
+      {
+        path: "/login",
+        element: <Login />
+      },
+      {
+        path: "/signup",
+        element: <Signup />
+      },
     ]
   }])
   return <RouterProvider router={router} />

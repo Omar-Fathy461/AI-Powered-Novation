@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
-import imgAbout from '../../assets/images/bg-about (1).png'
+import imgAbout from '../../assets/images/item12.png'
 
 //components
 import Buttons from '../../common/buttons'

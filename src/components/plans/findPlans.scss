@@ -1,0 +1,35 @@
+@import '../../assets/sass/utils.scss';
+
+.findPlan {
+    background-color: black;
+    background-image: url(../../assets/images/bg-fixed4.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding-block: 50px 100px;
+
+    .plan-description {
+        color: #838386;
+    }
+
+    .btns {
+        background-color: #83838673;
+        width: fit-content;
+        padding: 10px;
+        border-radius: 10px;
+
+        button {
+            background: transparent;
+            border: none;
+            color: white;
+            font-weight: 600;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .active {
+            background-color: $mainColor;
+
+        }
+    }
+}

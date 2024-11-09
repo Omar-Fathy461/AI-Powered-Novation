@@ -1,0 +1,192 @@
+@import '../../assets/sass/utils.scss';
+
+.blogPage {
+    background: #000;
+
+    .blog-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding-block: 100px;
+
+        .blogs {
+
+            .blog {
+                padding-block: 20px;
+
+                &-bg {
+                    width: 100%;
+                    border-radius: 30px;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        transition: transform .4s ease;
+                    }
+
+                }
+
+                &:hover {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+
+                .tagType {
+                    margin-block: 10px;
+                    padding: 3px 6px;
+                    font-size: 13px;
+                    color: white;
+                    font-weight: 500;
+                    background-color: $mainColor;
+                    width: fit-content;
+                    border-radius: 30px;
+                }
+
+                h2 {
+                    font-size: 30px;
+                    color: white;
+                    font-weight: 600;
+                    width: fit-content;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: -5px;
+                        width: 0;
+                        height: 2px;
+                        background-color: white;
+                        transition: width .4s ease;
+                    }
+
+                    &:hover::before {
+                        width: 100%;
+                    }
+                }
+
+                ul {
+                    display: flex;
+                    column-gap: 1.5rem;
+
+                    li {
+                        color: #838386;
+                        font-size: 14px;
+
+                        span {
+                            color: white;
+                            margin-left: 2px;
+                        }
+                    }
+
+                    svg {
+                        margin-right: 2px;
+                    }
+                }
+
+                p {
+                    color: #b3b3b9;
+                }
+
+                a {
+                    color: white;
+                }
+
+                h2,
+                ul,
+                p,
+                a {
+                    margin-block: 12px;
+                }
+            }
+
+        }
+
+        .sidbar {
+            flex: 1;
+            margin-top: 50px;
+            padding-inline: 50px;
+
+            .blog-sections {
+                margin-block: 50px;
+            }
+
+            h4 {
+                color: white;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: -15px;
+                    width: 100%;
+                    height: 1px;
+                    background-color: #83838684;
+                }
+            }
+
+            ul {
+                padding-left: 0;
+
+                li {
+                    color: white;
+                    position: relative;
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    padding-block: 20px 10px;
+                    transition: color .4s ease;
+                    cursor: pointer;
+
+                    svg {
+                        margin-right: 10px;
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        bottom: 0px;
+                        width: 100%;
+                        height: 1px;
+                        background-color: #83838684;
+                    }
+
+                    &:hover {
+                        color: $mainColor;
+                    }
+                }
+            }
+
+            button {
+                margin-block: 10px;
+                padding: 3px 6px;
+                font-size: 12px;
+                color: white;
+                font-weight: 500;
+                background-color: #8383864d;
+                width: fit-content;
+                border: none;
+                margin-right: 10px;
+                border-radius: 30px;
+                transition: background .4s ease;
+
+                &:hover {
+                    background-color: $mainColor
+                }
+            }
+        }
+
+
+    }
+}
+
+.Pagination {
+    button {
+        background: black;
+        border: 1px solid rgba(255, 255, 255, 0.365);
+        color: white;
+        width: 40px;
+        height: 40px;
+    }
+}

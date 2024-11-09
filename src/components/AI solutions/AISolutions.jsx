@@ -7,6 +7,10 @@ import { faBoxesStacked } from "@fortawesome/free-solid-svg-icons"
 //style
 import './aiSolutions.scss'
 const AISolutions = () => {
+
+
+
+
     return (
         <div className="aiSolutions">
             <div className="container">

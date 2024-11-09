@@ -1,0 +1,183 @@
+@import '../../assets/sass/utils.scss';
+
+.gallerySection {
+    background-color: black;
+    background-image: url(../../assets/images/bg-fixed4.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding-block: 100px;
+
+    h2 {
+        color: white;
+        font-size: $mainFontTitle;
+        font-weight: $mainFontWeight;
+    }
+
+    .filterItems {
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-block: 30px 60px;
+            padding-block: 3px;
+            border-radius: 30px;
+            background-color: #8383867e;
+            width: fit-content;
+            margin-inline: auto;
+            padding-inline: 5px;
+
+            li {
+                list-style: none;
+
+                button {
+                    background: transparent;
+                    color: white;
+                    font-weight: 500;
+                    padding: 8px;
+                    border-radius: 15px;
+                    margin-inline: 20px;
+                    border: none;
+                    transition: background .4s ease;
+
+                    &:hover {
+                        background-color: $mainColor;
+                    }
+                }
+
+                .active {
+                    background-color: $mainColor;
+                }
+            }
+        }
+    }
+
+    .galleryBox {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 2.5rem;
+
+        .cart {
+            grid-column: span 3;
+            position: relative;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                height: 293px;
+                border-radius: 20px;
+                object-fit: cover;
+            }
+
+            .imgTitle {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: white;
+                color: black;
+                font-weight: 500;
+                width: 90%;
+                padding-inline: 10px;
+                border-radius: 10px;
+                z-index: 2px;
+                opacity: 0;
+                transition: opacity .4s ease;
+
+                p {
+                    color: #838386;
+                    font-size: 13px;
+                    margin: 0;
+                }
+
+                h5,
+                p {
+                    padding-block: 2px;
+                }
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                right: 0;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                transition: background .4s ease;
+            }
+
+            &:hover::before {
+                background-color: rgba(0, 0, 0, 0.578);
+
+            }
+
+            &:hover {
+                .imgTitle {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .filterItems {
+        ul {
+            padding-inline: 0;
+
+            li {
+                button {
+                    margin-inline: 0 !important;
+                }
+            }
+        }
+    }
+
+    .galleryBox {
+        .cart {
+            grid-column: span 12 !important;
+            width: fit-content;
+            margin-inline: auto;
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width:767px) {
+    .filterItems {
+        ul {
+            padding-inline: 0;
+
+            li {
+                button {
+                    margin-inline: 10px !important;
+                }
+            }
+        }
+    }
+
+    .galleryBox {
+        .cart {
+            grid-column: span 6 !important;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+    .filterItems {
+        ul {
+            padding-inline: 0;
+
+            li {
+                button {
+                    margin-inline: 10px !important;
+                }
+            }
+        }
+    }
+
+    .galleryBox {
+        .cart {
+            grid-column: span 4 !important;
+        }
+    }
+}

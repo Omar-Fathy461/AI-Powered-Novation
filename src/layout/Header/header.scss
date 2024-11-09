@@ -76,6 +76,7 @@
     position: sticky;
     top: 0;
     padding-block: 10px;
+    box-shadow: 0px -12px 60px 0px rgba(125, 146, 255, 0.3);
     z-index: 5;
 
     .content {
@@ -87,7 +88,8 @@
                 position: relative;
                 text-decoration: none;
                 color: white;
-                font-size: 15px;
+                font-size: 13px;
+                font-weight: 500;
                 margin-inline: 15px;
 
                 &::after {

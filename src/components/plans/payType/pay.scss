@@ -1,0 +1,81 @@
+@import '../../../assets/sass/utils.scss';
+
+.freebie,
+.premium {
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #2f2d2d8e;
+    border: 1px solid transparent;
+    transition: all .4s ease;
+    cursor: pointer;
+
+    h3,
+    p,
+    h2 {
+        padding-block: 10px;
+    }
+
+    h3 {
+        color: white;
+        font-weight: 600;
+    }
+
+    p {
+        color: #838386;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 50px;
+        color: white;
+        font-weight: 500;
+    }
+
+    button {
+        width: 100%;
+        background: transparent;
+        border: 1px solid $mainColor;
+        border-radius: 30px;
+        color: white;
+        padding: 15px;
+        transition: border .4s ease;
+    }
+
+    .pay-features {
+        margin-block: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        span {
+            @extend %center_flex;
+            background-color: #838386;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+
+            svg {
+                color: white;
+                font-size: 15px;
+            }
+        }
+
+    }
+
+    .checkMark {
+        color: white;
+
+        span {
+            background-color: $mainColor ;
+        }
+    }
+
+    &:hover {
+        background: transparent;
+        border: 1px solid $mainColor;
+
+        button {
+            background-color: $mainColor
+        }
+    }
+}

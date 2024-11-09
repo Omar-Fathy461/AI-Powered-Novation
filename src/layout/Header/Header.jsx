@@ -39,11 +39,12 @@ const Header = () => {
                     <div className="content">
                         <div className="logo"><img src={logo} alt="" /></div>
                         <div className="links-nav">
-                            <NavLink to="/">Home</NavLink>
-                            <NavLink to="/about">About Us</NavLink>
-                            <NavLink to="/blog">Blog</NavLink>
-                            <NavLink to='/contact'>Contact</NavLink>
-                            <NavLink to="/services">Services</NavLink>
+                            <NavLink to="/">HOME</NavLink>
+                            <NavLink to="/services">SERVICES</NavLink>
+                            <NavLink to="/blogs">BLOG</NavLink>
+                            <NavLink to="/about">ABOUT US</NavLink>
+                            <NavLink to='/contact'>CONTACT</NavLink>
+                            <NavLink to='/signup'>SignUp</NavLink>
                         </div>
                         <div className="call">
                             <FontAwesomeIcon icon={faMagnifyingGlass} />

@@ -52,8 +52,8 @@
 
         .community_cards {
             display: flex;
-            justify-content: space-between;
-            gap: 2rem;
+            // justify-content: space-between;
+            // gap: 2rem;
             transition: transform .4s ease-in-out;
 
             .community_card {
@@ -143,6 +143,8 @@
 
             .community_cards {
                 .community_card {
+                    width: 100%;
+
                     .head {
                         .card_info {
                             img {

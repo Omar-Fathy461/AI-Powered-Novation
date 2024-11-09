@@ -4,6 +4,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 //style
 import './service.scss'
 
+
 const Service = () => {
     return (
         <div className='service'>
