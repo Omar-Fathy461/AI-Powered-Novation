@@ -19,12 +19,18 @@
     "@fortawesome/free-regular-svg-icons": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
+<<<<<<< HEAD
     "@hookform/resolvers": "^3.9.1",
     "@huggingface/inference": "^2.8.1",
     "@mui/icons-material": "^6.0.2",
     "@mui/material": "^6.0.2",
     "@reduxjs/toolkit": "^2.3.0",
     "animate.css": "^4.1.1",
+=======
+    "@huggingface/inference": "^2.8.1",
+    "@mui/icons-material": "^6.0.2",
+    "@mui/material": "^6.0.2",
+>>>>>>> eb3cb1c82b0560254ab20d29ac2a2b4b7b17a669
     "axios": "^1.7.7",
     "bootstrap": "^5.3.3",
     "firebase": "^11.0.1",

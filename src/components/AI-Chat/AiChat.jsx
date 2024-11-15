@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useDispatch, useSelector } from 'react-redux';
 import { setQuestion, getAnswer, addPreviousQuestion, newChat } from '../../store/slices/aiSlice';
 import './aiChat.scss';
@@ -92,6 +93,14 @@ const AiChat = () => {
                 </div>
             </div>
         </div>
+=======
+import './aiChat.scss';
+
+const AiChat = () => {
+
+    return (
+        <div><h1 className='text-center'>AI Chat</h1></div>
+>>>>>>> eb3cb1c82b0560254ab20d29ac2a2b4b7b17a669
     );
 }
 
