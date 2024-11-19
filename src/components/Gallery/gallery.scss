@@ -134,9 +134,12 @@
     }
 
     .galleryBox {
+        gap: 0 !important;
+        row-gap: 1.5rem !important;
+
         .cart {
             grid-column: span 12 !important;
-            width: fit-content;
+            width: 80%;
             margin-inline: auto;
         }
     }

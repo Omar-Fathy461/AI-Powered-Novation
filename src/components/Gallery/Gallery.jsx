@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import galleryData from './galleryData';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import './gallery.scss';
 
 const Gallery = () => {
@@ -65,10 +66,10 @@ const Gallery = () => {
                         </button></li>
                     </ul>
                 </div>
-                <div className='galleryBox'>
+                <div className='galleryBox '>
                     {gallery.map((el) => (
                         <div className='cart' key={el.id}>
-                            <img src={el.img} alt={el.type} />
+                            <LazyLoadImage src={el.img} alt={el.type} />
                             <div className='imgTitle'>
                                 <p>Marketting</p>
                                 <h5>AI financial management</h5>

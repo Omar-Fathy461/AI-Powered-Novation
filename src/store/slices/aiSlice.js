@@ -16,7 +16,7 @@ const getAnswer = createAsyncThunk("ai/getAnswer", async(question , thunkAPI) =>
 
 const initialState = {
     question: '',
-    answer: 'Hi',
+    answer: '',
     loading: false,
     error: null,
     previousQuestions: [] 

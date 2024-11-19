@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import blogData from '../../views/blog/blogsData';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './blogSlider.scss'
@@ -19,7 +20,7 @@ const BlogSlider = () => {
     };
 
     return (
-        <div className="blogSlider">
+        <div className="blogSlider" >
             <h2>Our Blogs</h2>
             <div className="container" >
                 <Swiper
@@ -36,7 +37,7 @@ const BlogSlider = () => {
                                 <SwiperSlide key={el.id} className='swiperSlide'>
                                     <Link to={`/blogs/${el.id}`} className='sliderContent col-sm-12 '>
                                         <div className="blogBg">
-                                            <img src={el.img} alt="" />
+                                            <LazyLoadImage src={el.img} alt="" />
                                         </div>
                                         <h5>{el.description}</h5>
                                         <p>Cryptocurrencies operate on decentralized networks...</p>

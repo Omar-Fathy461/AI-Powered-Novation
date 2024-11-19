@@ -17,7 +17,7 @@ const FindPlan = () => {
         <div className='findPlan'>
             <div className="container">
                 <div className="content d-flex flex-wrap align-items-center justify-content-between gap-4">
-                    <div className="findPlanHead container-sm col-lg-4 col-sm-12">
+                    <div className="findPlanHead container-sm pb-4 col-lg-4 col-sm-12">
                         <h2 className='text-white'>Find Your Right Plan</h2>
                         <p className='plan-description'>We offer a variety of pricing packages to meet the unique needs of our services. Contact us today to discuss which package is right for you.</p>
                         <div className="btns">

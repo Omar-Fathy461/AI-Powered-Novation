@@ -61,6 +61,8 @@
 /* Mobile */
 @media (max-width: 480px) {
     .faqs {
+        padding-inline: 20px;
+
         h2 {
             font-size: 25px !important;
         }
@@ -70,6 +72,8 @@
         }
 
         .accordion {
+            padding-bottom: 20px;
+
             .accordion-item {
                 button {
                     font-size: 16px !important;

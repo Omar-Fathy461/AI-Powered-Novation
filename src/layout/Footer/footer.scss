@@ -136,6 +136,10 @@
 
         .footer-contact {
             flex-direction: column-reverse;
+
+            span {
+                font-size: 12px !important;
+            }
         }
 
         .copyright {
@@ -191,7 +195,6 @@
 
     .footer {
         .content {
-            flex-direction: column;
 
             .logo,
             .links-nav,

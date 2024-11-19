@@ -1,0 +1,41 @@
+.MenuModal {
+    background-color: black;
+    color: white;
+    width: 70%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    padding: 20px 0;
+
+    .menuHead {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.545);
+        padding-bottom: 10px;
+        padding-inline: 10px;
+
+        svg {
+            color: white;
+            font-size: 20px;
+            transition: transform .4s ease;
+            cursor: pointer;
+
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    .menuLinks {
+        a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding-block: 10px;
+            padding-inline: 10px;
+            font-size: 15px;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.545);
+        }
+    }
+}

@@ -1,11 +1,17 @@
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faLocationDot, faMagnifyingGlass, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot, faMagnifyingGlass, faPhone, faBars } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faLinkedinIn, faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import logo from '../../assets/images/WhatsApp Image 2024-06-11 at 21.42.31_5ef99509.jpg'
 import './header.scss'
+import MenuModal from '../../components/menuModal/menuModal';
+
 const Header = () => {
+
+    const [menuOpen, setMenuOpen] = useState(false)
+
     return (
         <>
             <div className="navTop">
@@ -39,23 +45,15 @@ const Header = () => {
                     <div className="content">
                         <div className="logo"><img src={logo} alt="" /></div>
                         <div className="links-nav">
-<<<<<<< HEAD
                             <NavLink to="/">HOME</NavLink>
                             <NavLink to="/services">SERVICES</NavLink>
                             <NavLink to="/blogs">BLOG</NavLink>
                             <NavLink to="/about">ABOUT US</NavLink>
                             <NavLink to='/contact'>CONTACT</NavLink>
-                            <NavLink to='/signup'>SignUp</NavLink>
-=======
-                            <NavLink to="/">Home</NavLink>
-                            <NavLink to="/services">Services</NavLink>
-                            <NavLink to="/blog">Blog</NavLink>
-                            <NavLink to="/about">About Us</NavLink>
-                            <NavLink to='/contact'>Contact</NavLink>
->>>>>>> eb3cb1c82b0560254ab20d29ac2a2b4b7b17a669
                         </div>
                         <div className="call">
                             <FontAwesomeIcon icon={faMagnifyingGlass} />
+                            <FontAwesomeIcon icon={faBars} className='menuBar' onClick={() => setMenuOpen(state => !state)} style={{ cursor: "pointer" }} />
                             <span className='tel'>
                                 <span><FontAwesomeIcon icon={faPhone} /></span>
                                 <p>123 456 7890</p>
@@ -63,6 +61,7 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
+                {menuOpen && <MenuModal setMenuOpen={setMenuOpen} />}
             </div>
         </>
     )

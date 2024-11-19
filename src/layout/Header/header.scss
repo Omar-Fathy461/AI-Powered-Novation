@@ -130,6 +130,10 @@
                 color: white;
             }
 
+            .menuBar {
+                display: none;
+            }
+
             .tel {
                 display: flex;
                 align-items: center;
@@ -174,6 +178,10 @@
         }
 
         .call {
+            .menuBar {
+                display: block !important;
+            }
+
             svg {
                 font-size: 20px;
             }
@@ -206,12 +214,30 @@
         }
 
         .call {
+            .menuBar {
+                display: block !important;
+            }
+
             svg {
                 font-size: 20px;
             }
 
             .tel {
                 display: none !important;
+            }
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .navBottom {
+        .links-nav {
+            display: none;
+        }
+
+        .call {
+            .menuBar {
+                display: block !important;
             }
         }
     }

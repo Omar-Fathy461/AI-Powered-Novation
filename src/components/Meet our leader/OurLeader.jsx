@@ -1,3 +1,4 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import team1 from '../../assets/images/1.png'
 import team2 from '../../assets/images/12.png'
 import team3 from '../../assets/images/9.png'
@@ -16,28 +17,28 @@ const OurLeader = () => {
                     <div className="cards">
                         <div>
                             <span className="img-card">
-                                <img src={team2} alt="" />
+                                <LazyLoadImage src={team2} alt="" />
                             </span>
                             <h5>Maverick Nguyen</h5>
                             <p>Graphic Designer</p>
                         </div>
                         <div>
                             <span className="img-card">
-                                <img src={team4} alt="" />
+                                <LazyLoadImage src={team4} alt="" />
                             </span>
                             <h5>Georgina Smith</h5>
                             <p>CEO - Marketting</p>
                         </div>
                         <div>
                             <span className="img-card">
-                                <img src={team3} alt="" />
+                                <LazyLoadImage src={team3} alt="" />
                             </span>
                             <h5>Benjamin Pavard</h5>
                             <p>CEM - digiNova</p>
                         </div>
                         <div>
                             <span className="img-card">
-                                <img src={team4} alt="" />
+                                <LazyLoadImage src={team4} alt="" />
                             </span>
                             <h5>Christina Rodriguez</h5>
                             <p>Photographer</p>

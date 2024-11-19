@@ -56,6 +56,9 @@
 /* Mobile */
 @media (max-width: 480px) {
     .heading {
+        height: fit-content;
+        padding-inline: 12px;
+
         .content {
             .currentPage {
                 a {
@@ -70,7 +73,7 @@
             }
 
             h2 {
-                font-size: 27px;
+                font-size: 20px !important;
                 margin-block: 15px;
             }
 
@@ -112,6 +115,9 @@
 /* Small Tablets */
 @media (min-width: 768px) and (max-width: 991px) {
     .heading {
+        height: 20vh;
+        padding-inline: 10px;
+
         .content {
             .currentPage {
                 a {

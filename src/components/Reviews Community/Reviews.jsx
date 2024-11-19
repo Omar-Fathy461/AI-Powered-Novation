@@ -2,10 +2,10 @@ import { useRef } from 'react';
 import blogData from '../../views/blog/blogsData';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleLeft, faAngleRight, faStar, faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
-
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import useIntersectionFade from '../../Hooks/useIntersectionFade';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -21,6 +21,7 @@ const Reviews = () => {
 
     const prevRef = useRef(null);
     const nextRef = useRef(null);
+    const { addToRefs } = useIntersectionFade();
 
     const breakpoints = {
         200: { slidesPerView: 1 },
@@ -32,7 +33,7 @@ const Reviews = () => {
         <div className="our_community">
             <div className="container">
                 <div className="content d-flex flex-wrap">
-                    <div className="community_text col-lg-6">
+                    <div className="community_text col-lg-6" ref={addToRefs}>
                         <h2>Our Community With User Reviews</h2>
                         <p>Say goodbye to the hassle of managing multiple accounts across different financial institutions.</p>
                         <div className="angels">
@@ -40,7 +41,7 @@ const Reviews = () => {
                             <span ref={nextRef} className=" slider_next"><FontAwesomeIcon icon={faAngleRight} /></span>
                         </div>
                     </div>
-                    <div className="community_cards slider_items col-lg-6 col-12 ">
+                    <div className="community_cards slider_items col-lg-6 col-12 " ref={addToRefs}>
                         <Swiper
                             // install Swiper modules
                             // className='d-flex'
@@ -64,7 +65,7 @@ const Reviews = () => {
                                             <div className="community_card  slider_item">
                                                 <div className="head">
                                                     <div className="card_info">
-                                                        <img src={el.avatar} alt="" />
+                                                        <LazyLoadImage src={el.avatar} alt="" />
                                                         <div className="name">
                                                             <h3>{el.name}</h3>
                                                             <p>CONTENT STRATEGIST</p>

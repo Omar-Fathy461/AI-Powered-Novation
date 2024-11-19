@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-@import '../../assets/sass/utils.scss';
+@use '../../assets/sass/utils' as *;
 
 ::-webkit-scrollbar {
     width: .6rem;
@@ -148,12 +147,61 @@ html {
             }
 
         }
-=======
-.aiChat {
-    padding-block: 100px;
+    }
+}
 
-    .mainChat {
-        height: 600px;
->>>>>>> eb3cb1c82b0560254ab20d29ac2a2b4b7b17a669
+@media (max-width: 480px) {
+    .aiChat {
+        padding-block: 50px !important;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        .aiModal {
+            width: 100% !important;
+
+            .aiInput {
+                .aiBox {
+                    padding: 5px 10px !important;
+
+                    .sendBtn {
+                        padding: 12px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .aiChat {
+        padding-block: 50px !important;
+
+        h1 {
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 17px;
+        }
+
+        .aiModal {
+            width: 100% !important;
+
+            .aiInput {
+                .aiBox {
+                    padding: 5px 10px !important;
+
+                    .sendBtn {
+                        padding: 12px !important;
+                    }
+                }
+            }
+        }
     }
 }

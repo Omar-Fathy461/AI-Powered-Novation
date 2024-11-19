@@ -1,3 +1,4 @@
+import useIntersectionFade from '../../Hooks/useIntersectionFade';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBoxesStacked, faBox, faBolt } from '@fortawesome/free-solid-svg-icons'
 
@@ -5,13 +6,16 @@ import { faBoxesStacked, faBox, faBolt } from '@fortawesome/free-solid-svg-icons
 import './intelligent.scss'
 
 const IntelligentSolutions = () => {
+
+    const { addToRefs } = useIntersectionFade();
+
     return (
         <div className="intelligent_solutions">
             <div className="container">
                 <div className="content d-flex flex-wrap">
                     <div className="intelligent_text col-lg-6">
-                        <h2>Intelligent Solutions For Enhanced Customer</h2>
-                        <div className="solutions_types">
+                        <h2 ref={addToRefs}>Intelligent Solutions For Enhanced Customer</h2>
+                        <div className="solutions_types" ref={addToRefs}>
                             <div className="choose">
                                 <span><FontAwesomeIcon icon={faBoxesStacked} /></span>
                                 <div>
@@ -36,8 +40,8 @@ const IntelligentSolutions = () => {
                         </div>
                     </div>
                     <div className="intelligent_img col-lg-6">
-                        <p>Power up your website with our advanced chat bot that offers image and video tools, as well as quick and accurate question answering capabilities</p>
-                        <div className="intelligent_bg">
+                        <p ref={addToRefs}>Power up your website with our advanced chat bot that offers image and video tools, as well as quick and accurate question answering capabilities</p>
+                        <div className="intelligent_bg" ref={addToRefs}>
                             <div className="intelligent_content">
                                 <div className="business_problem">
                                     <p>1.77k+</p>

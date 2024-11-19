@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import blogData from './blogsData'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faComments } from '@fortawesome/free-regular-svg-icons'
@@ -23,6 +24,7 @@ const Blog = () => {
         const from = (page - 1) * numArticle;
         const to = (page - 1) * numArticle + numArticle;
         setPagination({ ...pagination, from, to })
+        window.scrollTo(0, 0);
     }
 
     return (
@@ -36,7 +38,7 @@ const Blog = () => {
                                 return (
                                     <div key={el.id} className='blog'>
                                         <div className='blog-bg'>
-                                            <img src={el.img} alt="bg1" />
+                                            <LazyLoadImage src={el.img} alt="bg1" />
                                         </div>
                                         <p className='tagType'>{el.tag}</p>
                                         <h2>Exploring AI Generation Create Image</h2>

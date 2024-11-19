@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import imgAbout from '../../assets/images/item12.png'
 
 //components
@@ -24,7 +25,7 @@ const IdeasSection = () => {
                         </div>
                     </div>
                     <div className="img-ideas col-lg-2 col-sm-12">
-                        <img src={imgAbout} alt="" />
+                        <LazyLoadImage src={imgAbout} alt="" />
                         <div className="achievements">
                             <div>
                                 <h4>350+</h4>

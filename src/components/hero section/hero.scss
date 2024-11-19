@@ -3,11 +3,6 @@
 .heroSection {
     background-image: url("../../assets/images/bg-slider4.png");
     background-color: #121215;
-    // background: linear-gradient(to left,
-    //         rgb(241, 234, 255),
-    //         rgb(229, 212, 255),
-    //         rgb(220, 191, 255),
-    //         rgb(208, 162, 247));
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -16,11 +11,121 @@
 
     .content {
         padding-block: 100px;
+        position: relative;
+
+        .checkAnimation {
+            @extend %center_flex;
+            position: absolute;
+            background-color: #7c3cf3a0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            animation: checkAnimation 3s linear infinite;
+
+            svg {
+                color: white;
+                font-size: 30px
+            }
+        }
+
+        .starAnimation {
+            @extend %center_flex;
+            position: absolute;
+            right: 0;
+            bottom: 30%;
+            background-color: #7c3cf3a0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            animation: checkAnimation 3s linear infinite;
+
+            svg {
+                color: white;
+                font-size: 30px
+            }
+        }
+
+        .star2Animation {
+            @extend %center_flex;
+            position: absolute;
+            bottom: -10%;
+            left: 20%;
+            background-color: #7c3cf3a0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            animation: checkAnimation 3s linear infinite;
+
+            svg {
+                color: white;
+                font-size: 30px
+            }
+        }
+
+        .avatarAnimation {
+            @extend %center_flex;
+            position: absolute;
+            bottom: 0;
+            background-color: #7c3cf3a0;
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border-radius: 50%;
+            animation: avatarAnimation 5s linear infinite;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .avatar2Animation {
+            @extend %center_flex;
+            position: absolute;
+            bottom: -5%;
+            right: 0;
+            width: fit-content;
+            background-color: rgba(128, 128, 128, 0.345);
+            padding: 10px;
+            animation: avatar2Animation 5s linear infinite;
+            color: white;
+            border-radius: 30px;
+
+            img {
+                width: 60px;
+            }
+        }
+
+        .starsAnimation {
+            background-color: rgba(128, 128, 128, 0.345);
+            position: absolute;
+            right: 0;
+            padding: 10px;
+            border-radius: 15px;
+            animation: starsAnimation 5s linear infinite;
+
+            svg {
+                color: white;
+                margin-left: 5px;
+            }
+
+            p {
+                margin-block: 0;
+                color: white
+            }
+
+        }
 
         .avatar {
             @extend %center_flex;
             flex-wrap: wrap;
             gap: 1.5rem;
+            background: rgba(231, 226, 226, 0.057);
+            background: linear-gradient(180deg, rgba(231, 226, 226, 0.31414572665003504) 41%, rgba(232, 234, 237, 0) 100%);
+            border-top-right-radius: 30px;
+            border-top-left-radius: 30px;
+            width: fit-content;
+            margin-inline: auto;
+            padding: 20px;
 
             .numAvatars {
                 font-size: 14px;
@@ -58,10 +163,87 @@
     }
 }
 
+
+@keyframes checkAnimation {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(0, 10px) rotate(30deg);
+    }
+
+    75% {
+        transform: translate(0, -10px) rotate(-30deg);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes avatarAnimation {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(0, 10px) rotate(-20deg);
+    }
+
+    75% {
+        transform: translate(0, -10px) rotate(30deg);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes starsAnimation {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(-10px, 3px) rotate(-5deg);
+    }
+
+    75% {
+        transform: translate(0, -3px) rotate(5deg);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes avatar2Animation {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(-10px, 3px) rotate(-5deg);
+    }
+
+    75% {
+        transform: translate(0, -3px) rotate(5deg);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
 /* Mobile */
 @media (max-width: 480px) {
     .heroSection {
+        height: 100%;
+
         .content {
+            padding-block: 50px 150px;
+
             .avatar {
                 p {
                     font-weight: 600;
@@ -69,8 +251,21 @@
             }
 
             h1 {
-                font-size: 40px;
+                font-size: 30px;
                 margin-block: 20px;
+            }
+
+            h2 {
+                font-size: 25px;
+            }
+
+            .checkAnimation,
+            .avatarAnimation,
+            .starsAnimation,
+            .starAnimation,
+            .star2Animation,
+            .avatar2Animation {
+                display: none;
             }
         }
     }
@@ -79,6 +274,9 @@
 /* Extra small devices */
 @media (min-width: 481px) and (max-width: 767px) {
     .heroSection {
+        height: 100%;
+        padding-block: 0px 150px;
+
         .content {
             .avatar {
                 p {
@@ -91,6 +289,15 @@
                 text-align: center;
                 margin-block: 20px;
             }
+
+            .checkAnimation,
+            .avatarAnimation,
+            .starsAnimation,
+            .starAnimation,
+            .star2Animation,
+            .avatar2Animation {
+                display: none;
+            }
         }
     }
 }
@@ -98,7 +305,8 @@
 /* Small Tablets */
 @media (min-width: 768px) and (max-width: 991px) {
     .heroSection {
-        height: 85vh;
+        height: 100%;
+        padding-block: 0px 150px;
 
         .content {
             .avatar {
@@ -110,6 +318,11 @@
             h1 {
                 font-size: 50px;
                 text-align: center;
+            }
+
+            .starsAnimation,
+            .avatar2Animation {
+                display: none;
             }
         }
     }

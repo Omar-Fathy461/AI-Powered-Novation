@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import blogData from './blogsData';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Heading from '../../components/common head/heading';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faLinkedinIn, faXTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
@@ -24,7 +25,7 @@ const BlogDetail = () => {
                         <p className='blogData-type'>{blog.tag}</p>
                         <h2>A Look at How the Brand Stays Ahead of the Competition</h2>
                         <ul>
-                            <li><img src={blog.avatar} alt="avatar" /> <span>{blog.name}</span></li>
+                            <li><LazyLoadImage src={blog.avatar} alt="avatar" /> <span>{blog.name}</span></li>
                             <li>Oct 12, 2023</li>
                             <li><FontAwesomeIcon icon={faComments} />  02 comments</li>
                         </ul>
@@ -42,7 +43,7 @@ const BlogDetail = () => {
                         <p>Attracting good money and achieving financial success is within your reach. With our innovative solutions and expert guidance, we empower you to unlock your creative business potential and thrive in today's competitive landscape.</p>
 
                         <div className="blogDetail-bg">
-                            <img src={blog.img} alt="" />
+                            <LazyLoadImage src={blog.img} alt="" />
                         </div>
 
                         <p>Let us help you navigate the complexities of the financial world, maximize your earnings, and turn your creative passion into a lucrative venture. It's time to unleash your full potential and embark on a journey towards financial prosperity.</p>
@@ -87,7 +88,7 @@ const BlogDetail = () => {
                     <div className="sidbar col-lg-3">
                         <div className='auther'>
                             <div className="auther-img">
-                                <img src={blog.avatar} alt="" />
+                                <LazyLoadImage src={blog.avatar} alt="" />
                             </div>
                             <div className="auther-detail">
                                 <h4>{blog.name}</h4>
