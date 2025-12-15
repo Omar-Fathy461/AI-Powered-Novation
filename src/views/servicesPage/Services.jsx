@@ -1,7 +1,7 @@
 // import { useState, useEffect } from 'react'
 
 //components
-import Heading from '../../components/commonHead/heading'
+import Heading from '../../components/commonHead/Heading'
 import AISolutions from '../../components/AISolutions/AISolutions'
 import BrandSlider from '../../components/brandsSlider/BrandSlider'
 import Reviews from '../../components/ReviewsCommunity/Reviews'

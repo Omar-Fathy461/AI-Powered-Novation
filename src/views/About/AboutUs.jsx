@@ -1,5 +1,5 @@
 //components
-import Heading from '../../components/commonHead/heading'
+import Heading from '../../components/commonHead/Heading'
 import IdeasSection from '../../components/About Ideas/IdeasSection'
 import BrandSlider from '../../components/brandsSlider/BrandSlider'
 import IntelligentSolutions from '../../components/IntelligentSolutions/IntelligentSolutions'

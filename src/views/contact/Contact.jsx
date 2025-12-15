@@ -1,5 +1,5 @@
 //components
-import Heading from '../../components/commonHead/heading'
+import Heading from '../../components/commonHead/Heading'
 import ContactForm from '../../components/ContactForm/ContactForm'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
