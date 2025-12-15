@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import PayMonthly from './payType/payMonthly';
+import PayMonthly from './payType/PayMonthly';
 import './findPlans.scss'
-import PayYearly from './payType/payYearly';
+import PayYearly from './payType/PayYearly';
 const FindPlan = () => {
 
     const [activeBtn, setActiveBtn] = useState(null);
