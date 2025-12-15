@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider, createHashRouter } from "react-router-dom"
+import { RouterProvider, createHashRouter } from "react-router-dom"
 
 // components
 import RootLayout from "./components/RootLayout"

@@ -1,11 +1,11 @@
 //components
-import Heading from '../../components/common head/heading'
+import Heading from '../../components/commonHead/heading'
 import IdeasSection from '../../components/About Ideas/IdeasSection'
 import BrandSlider from '../../components/brandsSlider/BrandSlider'
-import IntelligentSolutions from '../../components/Intelligent Solutions/IntelligentSolutions'
-import Service from '../../components/Service Creative/Service'
-import Benefit from '../../components/Our Benefit/Benefit'
-import OurLeader from '../../components/Meet our leader/OurLeader'
+import IntelligentSolutions from '../../components/IntelligentSolutions/IntelligentSolutions'
+import Service from '../../components/ServiceCreative/Service'
+import Benefit from '../../components/OurBenefit/Benefit'
+import OurLeader from '../../components/MeetOurleader/OurLeader'
 
 //style
 import './about.scss'

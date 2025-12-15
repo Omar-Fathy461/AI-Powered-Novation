@@ -1,11 +1,11 @@
 // import { useState, useEffect } from 'react'
 
 //components
-import Heading from '../../components/common head/heading'
-import AISolutions from '../../components/AI solutions/AISolutions'
+import Heading from '../../components/commonHead/heading'
+import AISolutions from '../../components/AISolutions/AISolutions'
 import BrandSlider from '../../components/brandsSlider/BrandSlider'
-import Reviews from '../../components/Reviews Community/Reviews'
-import ContactFormPage from '../../components/Contact Form Page/ContactFormPage'
+import Reviews from '../../components/ReviewsCommunity/Reviews'
+import ContactFormPage from '../../components/ContactFormPage/ContactFormPage'
 import AiChat from '../../components/AI-Chat/AiChat'
 // import NotificationModal from '../../components/Notification/NotificationModal'
 

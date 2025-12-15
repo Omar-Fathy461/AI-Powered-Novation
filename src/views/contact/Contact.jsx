@@ -1,6 +1,6 @@
 //components
-import Heading from '../../components/common head/heading'
-import ContactForm from '../../components/Contact Form/ContactForm'
+import Heading from '../../components/commonHead/heading'
+import ContactForm from '../../components/ContactForm/ContactForm'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faLinkedinIn, faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'

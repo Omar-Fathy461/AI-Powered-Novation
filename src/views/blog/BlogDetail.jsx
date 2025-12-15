@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import blogData from './blogsData';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import Heading from '../../components/common head/heading';
+import Heading from '../../components/commonHead/heading';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faLinkedinIn, faXTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
