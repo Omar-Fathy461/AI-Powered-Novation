@@ -1,4 +1,4 @@
-import Buttons from '../../common/buttons';
+import Buttons from '../../common/Buttons';
 import Avatar from '@mui/material/Avatar';
 import AvatarGroup from '@mui/material/AvatarGroup';
 import avatar1 from '../../assets/images/avatar1.png'

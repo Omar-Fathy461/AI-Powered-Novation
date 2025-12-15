@@ -4,7 +4,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import imgAbout from '../../assets/images/item12.png'
 
 //components
-import Buttons from '../../common/buttons'
+import Buttons from '../../common/Buttons'
 
 //style
 import './ideas.scss'

@@ -1,21 +1,11 @@
-// import { useState, useEffect } from 'react'
-
-//components
 import Heading from '../../components/commonHead/Heading'
 import AISolutions from '../../components/AISolutions/AISolutions'
 import BrandSlider from '../../components/brandsSlider/BrandSlider'
 import Reviews from '../../components/ReviewsCommunity/Reviews'
 import ContactFormPage from '../../components/ContactFormPage/ContactFormPage'
 import AiChat from '../../components/AI-Chat/AiChat'
-// import NotificationModal from '../../components/Notification/NotificationModal'
 
 const Services = () => {
-
-    // const [isLogin, setIsLogin] = useState(false)
-
-    // useEffect(() => {
-    //     setIsLogin(true)
-    // }, [])
 
     return (
         <div>
@@ -25,7 +15,6 @@ const Services = () => {
             <BrandSlider />
             <Reviews />
             <ContactFormPage />
-            {/* {isLogin && <NotificationModal setIsLogin={setIsLogin} />} */}
         </div>
     )
 }
