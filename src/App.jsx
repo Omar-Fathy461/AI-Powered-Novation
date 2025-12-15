@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { createBrowserRouter, RouterProvider, createHashRouter } from "react-router-dom"
 
 // components
 import RootLayout from "./components/RootLayout"
@@ -15,7 +15,7 @@ import './assets/sass/app.scss'
 import 'animate.css';
 
 function App() {
-  const router = createBrowserRouter([{
+  const router = createHashRouter([{
     path: "/",
     element:
       <>
