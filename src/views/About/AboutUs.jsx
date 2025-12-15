@@ -1,6 +1,6 @@
 //components
 import Heading from '../../components/commonHead/Heading'
-import IdeasSection from '../../components/About Ideas/IdeasSection'
+import IdeasSection from '../../components/AboutIdeas/IdeasSection'
 import BrandSlider from '../../components/brandsSlider/BrandSlider'
 import IntelligentSolutions from '../../components/IntelligentSolutions/IntelligentSolutions'
 import Service from '../../components/ServiceCreative/Service'
