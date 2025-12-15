@@ -6,7 +6,7 @@ import { faLocationDot, faMagnifyingGlass, faPhone, faBars } from '@fortawesome/
 import { faFacebookF, faLinkedinIn, faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import logo from '../../assets/images/WhatsApp Image 2024-06-11 at 21.42.31_5ef99509.jpg'
 import './header.scss'
-import MenuModal from '../../components/menuModal/menuModal';
+import MenuModal from '../../components/menuModal/MenuModal';
 
 const Header = () => {
 
