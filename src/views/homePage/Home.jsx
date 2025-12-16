@@ -11,6 +11,7 @@ import FormSendMessage from '../../components/GetInTouch/FormSendMessage'
 import Gallery from '../../components/Gallery/Gallery'
 import FindPlan from '../../components/plans/FindPlan'
 import BlogSlider from '../../components/Slider/BlogSlider'
+import AiChat from '../../components/AI-Chat/AiChat'
 
 
 //style
@@ -20,6 +21,7 @@ const Home = () => {
     return (
         <div>
             <HeroSection />
+            <AiChat />
             <BrandSlider />
             <About />
             <AiFeatures />

@@ -19,7 +19,7 @@ const AiChat = () => {
         if (question.trim()) {
             dispatch(addPreviousQuestion(question));
             dispatch(getAnswer(question));
-            dispatch(setQuestion(''));  // تفريغ الـ input بعد إرسال السؤال
+            dispatch(setQuestion(''));
         }
     };
 
