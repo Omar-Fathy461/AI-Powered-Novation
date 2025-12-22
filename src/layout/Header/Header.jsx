@@ -20,7 +20,7 @@ const Header = () => {
                         <div className="address">
                             <div>
                                 <FontAwesomeIcon icon={faEnvelope} />
-                                <p>hi.avitex@gmail.com</p>
+                                <p>Omar.avitex@gmail.com</p>
                             </div>
                             <div>
                                 <FontAwesomeIcon icon={faLocationDot} />
