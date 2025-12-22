@@ -1,0 +1,30 @@
+name: CI/CD - Next.js to Vercel
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6.0.1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6.1.0
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run build
+        run: npm run build
+
+      - name: Deploy to Vercel
+        run: |
+          npm install -g vercel
+          vercel deploy --prod --yes --token=${{ secrets.VERCEL_TOKEN }}
